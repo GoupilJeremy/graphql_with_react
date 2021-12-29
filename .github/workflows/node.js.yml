@@ -29,7 +29,3 @@ jobs:
         cache-dependency-path: users/package-lock.json
     - run: npm install
       working-directory: users
-    - run: npm run build --if-present
-      working-directory: users
-    - run: npm test
-      working-directory: users
