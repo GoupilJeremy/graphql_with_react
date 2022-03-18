@@ -16,6 +16,14 @@
   }
 }`
 
+`mutation {
+  editUser(id: "40", age: 10){
+    id
+    firstName
+    age
+  }
+}`
+
 ## Responses
 
 `{
@@ -32,6 +40,16 @@
   "data": {
     "deleteUser": {
       "id": null
+    }
+  }
+}`
+
+`{
+  "data": {
+    "editUser": {
+      "id": "40",
+      "firstName": "Alex",
+      "age": 10
     }
   }
 }`
