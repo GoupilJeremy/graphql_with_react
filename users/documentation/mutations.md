@@ -1,6 +1,6 @@
 # Mutation
 
-## Query
+## Queries
 
 `mutation {
   addUser(firstName: "Jeremy", age: 38) {
@@ -10,7 +10,13 @@
   }
 }`
 
-## Response
+`mutation {
+  deleteUser(id: "79jdCGB"){
+    id
+  }
+}`
+
+## Responses
 
 `{
   "data": {
@@ -18,6 +24,14 @@
       "id": "79jdCGB",
       "firstName": "Jeremy",
       "age": 38
+    }
+  }
+}`
+
+`{
+  "data": {
+    "deleteUser": {
+      "id": null
     }
   }
 }`
